@@ -1,1 +1,33 @@
-<p>search-hotel works!</p>
+<section class="bg-gray-100">
+  <header class="bg-blue-500 p-4 text-white">
+    <div class="container mx-auto">
+      <h1 class="text-2xl font-bold">Consulta de Hotéis</h1>
+    </div>
+  </header>
+
+  <main class="container mx-auto mt-8 p-4">
+    <div class="bg-white p-4 rounded-lg shadow">
+      <form class="flex items-center">
+        <input type="text" placeholder="Pesquisar hotéis..." class="w-full p-2 border rounded-lg">
+        <button type="submit" class="ml-2 bg-blue-500 text-white p-2 rounded-lg">Pesquisar</button>
+      </form>
+    </div>
+
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Aqui você pode iterar sobre a lista de hotéis e exibir as informações de cada hotel -->
+      <div class="bg-white rounded-lg p-4 shadow">
+        <h2 class="text-xl font-semibold">Nome do Hotel</h2>
+        <p class="text-gray-600">Endereço do Hotel</p>
+        <p class="text-gray-600">Preço por noite: $XXX</p>
+        <button class="mt-2 bg-blue-500 text-white p-2 rounded-lg">Ver Detalhes</button>
+      </div>
+
+      <!-- Repita este bloco para cada hotel na lista -->
+
+    </div>
+  </main>
+
+  <footer class="bg-blue-500 text-white p-4 text-center">
+    <p>&copy; 2023 Consulta de Hotéis</p>
+  </footer>
+</section>
