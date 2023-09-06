@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { SearchHotelComponent } from './search-hotel/search-hotel.component';
 
-
+const routes: Routes = [
+  {
+    path: '',
+    component: SearchHotelComponent,
+  },
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
-export class HotelRoutingModule { }
+export class HotelRoutingModule {}
