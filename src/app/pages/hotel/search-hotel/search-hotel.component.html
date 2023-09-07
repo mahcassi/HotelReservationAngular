@@ -15,10 +15,9 @@
 
     <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <!-- Aqui você pode iterar sobre a lista de hotéis e exibir as informações de cada hotel -->
-      <div class="bg-white rounded-lg p-4 shadow">
-        <h2 class="text-xl font-semibold">Nome do Hotel</h2>
-        <p class="text-gray-600">Endereço do Hotel</p>
-        <p class="text-gray-600">Preço por noite: $XXX</p>
+      <div class="bg-white rounded-lg p-4 shadow" *ngFor="let hotel of hotels">
+        <h2 class="text-xl font-semibold">{{ hotel.name }}</h2>
+        <p class="text-gray-600">{{ hotel.addressHotel.city }}, {{ hotel.addressHotel.state }}</p>
         <button class="mt-2 bg-blue-500 text-white p-2 rounded-lg">Ver Detalhes</button>
       </div>
 
