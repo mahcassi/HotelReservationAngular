@@ -1,4 +1,4 @@
-<main class="container mx-auto mt-8 p-4" *ngIf="detailsHotelResponse">
+<section class="container mx-auto mt-8 p-4" *ngIf="detailsHotelResponse">
   <div class="bg-white p-4 rounded-lg shadow">
     <!-- Exiba os detalhes do hotel aqui -->
     <h2 class="text-2xl font-semibold">{{ detailsHotelResponse.name }}</h2>
@@ -7,4 +7,6 @@
     <p class="mt-4">Descrição do Hotel:</p>
     <p class="text-gray-600">Esta é uma descrição do hotel...</p>
   </div>
-</main>
+</section>
+
+<app-rooms [rooms]="detailsHotelResponse.rooms"></app-rooms>
