@@ -14,7 +14,7 @@ export class HotelService {
     return this._http.get<IHotelResponse[]>(`${environment.apiUrl}Hotels`);
   }
 
-  getHotelById(id: number): Observable<any> {
+  getHotelById(id: number): Observable<IHotelResponse> {
     return this._http.get<any>(`${environment.apiUrl}Hotels/${id}`);
   }
 }
