@@ -1,7 +1,13 @@
+import { IDefaultDescription } from "./common/default.interface";
+import { IRoom } from "./room.interface";
+
 export interface IHotelResponse {
   id: number;
   name: string;
+  phoneNumber: string;
+  amenityHotel: IDefaultDescription[];
   addressHotel: IAddressHotel;
+  rooms: IRoom[];
 }
 
 export interface IAddressHotel {
@@ -15,3 +21,4 @@ export interface IAddressHotel {
   street: string;
   zipCode: string;
 }
+
