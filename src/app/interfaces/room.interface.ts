@@ -1,3 +1,5 @@
+import { IAddressHotel } from "./hotel.interface";
+
 export interface IRoom {
   availability: boolean;
   hotelId: number;
@@ -6,4 +8,5 @@ export interface IRoom {
   price: number;
   roomType: 2;
   size: string;
+  hotelAddress: IAddressHotel;
 }
