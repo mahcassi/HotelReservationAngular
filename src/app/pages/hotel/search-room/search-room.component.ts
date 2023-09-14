@@ -24,7 +24,7 @@ export class SearchRoomComponent implements OnInit {
     });
   }
 
-  getDetailsRoomById(id: number): void {
-    this._router.navigate([`/hotel/details/${id}`]);
+  getDetailsRoomById(hotelId: number, roomId: number): void {
+    this._router.navigate([`/hotel/details/${hotelId}/${roomId}`]);
   }
 }

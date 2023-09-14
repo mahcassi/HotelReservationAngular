@@ -22,4 +22,8 @@ export class HotelService {
   getRooms(): Observable<IRoom[]> {
     return this._http.get<IRoom[]>(`${environment.apiUrl}Rooms`);
   }
+
+  getRoomById(id: number): Observable<IRoom> {
+    return this._http.get<IRoom>(`${environment.apiUrl}Rooms/${id}`);
+  }
 }

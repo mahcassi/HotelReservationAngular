@@ -7,7 +7,7 @@ import { IRoom } from 'src/app/interfaces/room.interface';
   styleUrls: ['./rooms.component.css'],
 })
 export class RoomsComponent implements OnInit {
-  @Input() rooms: IRoom[] = [];
+  @Input() room!: IRoom;
   
   constructor() {}
 

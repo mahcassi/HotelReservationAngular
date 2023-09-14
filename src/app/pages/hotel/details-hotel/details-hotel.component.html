@@ -6,7 +6,14 @@
     <p class="text-gray-600">Telefone: {{detailsHotelResponse.phoneNumber}}</p>
     <p class="mt-4">Descrição do Hotel:</p>
     <p class="text-gray-600">Esta é uma descrição do hotel...</p>
+
+    <br>
+
+    <p class="mt-4">Principais Comodidades: </p>
+    <div class="bg-white p-4 shadow" *ngFor="let amenity of detailsHotelResponse.amenityHotel">
+      <p class="font-semibold">{{ amenity.name }}</p>
+    </div>
   </div>
 </section>
 
-<app-rooms [rooms]="detailsHotelResponse.rooms"></app-rooms>
+<app-rooms [room]="room"></app-rooms>
