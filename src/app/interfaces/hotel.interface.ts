@@ -5,6 +5,7 @@ export interface IHotelResponse {
   id: number;
   name: string;
   phoneNumber: string;
+  description: string;
   amenityHotel: IDefaultDescription[];
   addressHotel: IAddressHotel;
   rooms: IRoom[];
