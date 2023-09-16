@@ -5,11 +5,11 @@ import { IRoom } from 'src/app/interfaces/room.interface';
 import { HotelService } from 'src/app/services/hotel.service';
 
 @Component({
-  selector: 'app-details-hotel',
-  templateUrl: './details-hotel.component.html',
-  styleUrls: ['./details-hotel.component.css'],
+  selector: 'app-details-room',
+  templateUrl: './details-room.component.html',
+  styleUrls: ['./details-room.component.css'],
 })
-export class DetailsHotelComponent implements OnInit {
+export class DetailsRoomComponent implements OnInit {
   detailsHotelResponse!: IHotelResponse;
   room!: IRoom;
 
